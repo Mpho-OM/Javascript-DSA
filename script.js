@@ -141,16 +141,97 @@
 
 // write a program to loop through an array and set the variable number to the highest number in the array
 
-const numberPicker = (numbers) => {
-  let result = numbers[0];
-  //   loop
-  for (const number of numbers) {
-    if (number > result) {
-      result = number;
+// const numberPicker = (numbers) => {
+//   let result = numbers[0];
+//   //   loop
+//   for (const number of numbers) {
+//     if (number > result) {
+//       result = number;
+//     }
+//   }
+//   return { result };
+// };
+
+// const numbers = [1, 2, 3, 4, 5, 10, 1];
+// console.log(numberPicker(numbers));
+
+// const Maxnumber = (nums) => {
+//   let result = nums[0];
+
+//   for (let num of nums) {
+//     if (num > result) {
+//       result = num;
+//     }
+//   }
+//   return { result };
+// };
+
+// const nums = [1, 2, 4, 5, 67, 8];
+
+// console.log(Maxnumber(nums));
+
+// create an letter frequency coounter
+
+// const LetterFrequency = (phrase) => {
+//   let frequency = {};
+//   for (letter of phrase) {
+//     if (letter in frequency) {
+//       frequency[letter] = frequency[letter] + 1;
+//     } else {
+//       frequency[letter] = 1;
+//     }
+//   }
+//   return frequency;
+// };
+// const phrase = "haha fools on you";
+// console.log(LetterFrequency(phrase));
+
+// highest number in the array
+// const HighNumber = (Numbers) => {
+//   let highNum = Numbers[0];
+//   for (let number of Numbers) {
+//     if (number > highNum) {
+//       highNum = number;
+//     }
+//   }
+//   return highNum;
+// };
+// const Numbers = [1, 3, 4, 5, 6, 78, 9];
+// console.log(HighNumber(Numbers));
+
+//letter frequency
+
+// const LetterFrequency = (phrase) => {
+//   let container = {};
+
+//   for (letter of phrase) {
+//     if (letter in container) {
+//       container[letter] = container[letter] + 1;
+//     } else {
+//       container[letter] = 1;
+//     }
+//   }
+//   return container;
+// };
+
+// const phrase = "haha";
+// console.log(LetterFrequency(phrase));
+// word counter
+
+const wordFrequency = (splitterPhrase) => {
+  const container = {};
+  // const wordsplit = phrase.split(" ");
+  for (let word of splitterPhrase) {
+    if (word in container) {
+      container[word] = container[word] + 1;
+    } else {
+      container[word] = 1;
     }
   }
-  return { result };
+  return container;
 };
 
-const numbers = [1, 2, 3, 4, 5, 10, 1];
-console.log(numberPicker(numbers));
+const phrase = "hello Mpho, hello world!";
+const splitterPhrase = phrase.split(" ");
+
+console.log(wordFrequency(splitterPhrase));
