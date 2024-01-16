@@ -218,20 +218,74 @@
 // console.log(LetterFrequency(phrase));
 // word counter
 
-const wordFrequency = (splitterPhrase) => {
-  const container = {};
-  // const wordsplit = phrase.split(" ");
-  for (let word of splitterPhrase) {
-    if (word in container) {
-      container[word] = container[word] + 1;
-    } else {
-      container[word] = 1;
-    }
+// const wordFrequency = (splitterPhrase) => {
+//   const container = {};
+//   // const wordsplit = phrase.split(" ");
+//   for (let word of splitterPhrase) {
+//     if (word in container) {
+//       container[word] = container[word] + 1;
+//     } else {
+//       container[word] = 1;
+//     }
+//   }
+//   return container;
+// };
+
+// const phrase = "hello Mpho, hello world!";
+// const splitterPhrase = phrase.split(" ");
+
+// console.log(wordFrequency(splitterPhrase));
+
+//word frequency
+
+// const wordSplitter = (phrase) => {
+//   let wordContainer = {};
+
+//   for (word of phrase) {
+//     console.log(word);
+//     if (word in wordContainer) {
+//       wordContainer[word] += 1;
+//     } else {
+//       wordContainer[word] = 1;
+//     }
+//   }
+//   return { wordContainer };
+// };
+
+// const phrase = "hello mpho, hello world!";
+
+// console.log(wordSplitter(phrase.split(" ")));
+
+// sum of numbers in an array
+
+// const sum = (array) => {
+//   let result = 0;
+//   for (num of array) {
+//     console.log(num);
+//     result += num;
+//   }
+//   return { result };
+// };
+
+// const array = [1, 2, 3, 4, 5];
+// console.log(sum(array));
+
+// using the filter method
+
+const array = [12, 4, 546, 7, 4];
+
+const sum = array.reduce((prev, value) => {
+  return prev + value;
+}, 0);
+
+console.log(sum);
+
+const sumArray = (array) => {
+  let sum = 0;
+  for (num of array) {
+    console.log(num);
+    sum = sum + num;
   }
-  return container;
+  return { sum };
 };
-
-const phrase = "hello Mpho, hello world!";
-const splitterPhrase = phrase.split(" ");
-
-console.log(wordFrequency(splitterPhrase));
+console.log(sumArray(array));
