@@ -272,20 +272,44 @@
 
 // using the filter method
 
-const array = [12, 4, 546, 7, 4];
+// const array = [12, 4, 546, 7, 4];
 
-const sum = array.reduce((prev, value) => {
-  return prev + value;
+// const sum = array.reduce((prev, value) => {
+//   return prev + value;
+// }, 0);
+
+// console.log(sum);
+
+// const sumArray = (array) => {
+//   let sum = 0;
+//   for (num of array) {
+//     console.log(num);
+//     sum = sum + num;
+//   }
+//   return { sum };
+// };
+// console.log(sumArray(array));
+
+// const NewArray = array.filter((num) => {
+//   return num > 4;
+// });
+// console.log(NewArray);
+
+// sum of all array using the reduce  method
+
+const array2 = [1, 2, 3, 4, 5, 6];
+
+// const AddFunction = array2.reduce((prevValue, value) => {
+//   return prevValue + value;
+// }, 0);
+
+// console.log(AddFunction);
+
+const newArray = array2.reverse();
+console.log(newArray);
+
+const reduceArray = newArray.reduce((oldVal, value) => {
+  return oldVal + value;
 }, 0);
 
-console.log(sum);
-
-const sumArray = (array) => {
-  let sum = 0;
-  for (num of array) {
-    console.log(num);
-    sum = sum + num;
-  }
-  return { sum };
-};
-console.log(sumArray(array));
+console.log(reduceArray);
