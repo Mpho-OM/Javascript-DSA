@@ -305,11 +305,18 @@ const array2 = [1, 2, 3, 4, 5, 6];
 
 // console.log(AddFunction);
 
-const newArray = array2.reverse();
-console.log(newArray);
+// const newArray = array2.reverse();
+// console.log(newArray);
 
-const reduceArray = newArray.reduce((oldVal, value) => {
-  return oldVal + value;
-}, 0);
+// const reduceArray = newArray.reduce((oldVal, value) => {
+//   return oldVal + value;
+// }, 0);
 
-console.log(reduceArray);
+// console.log(reduceArray);
+
+//filtering
+const filter = array2.filter((number) => {
+  return number > 4;
+});
+
+console.log(filter);
