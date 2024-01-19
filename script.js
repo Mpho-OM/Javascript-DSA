@@ -315,8 +315,9 @@ const array2 = [1, 2, 3, 4, 5, 6];
 // console.log(reduceArray);
 
 //filtering
-const filter = array2.filter((number) => {
-  return number > 4;
-});
+// const filter = array2.filter((number) => {
+//   return number > 4;
+// });
 
-console.log(filter);
+// console.log(filter);
+
