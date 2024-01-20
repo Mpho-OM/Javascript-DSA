@@ -321,3 +321,54 @@ const array2 = [1, 2, 3, 4, 5, 6];
 
 // console.log(filter);
 
+// sum of all natural numbers
+
+// const sumNumbers = (array) => {
+//   let result = 0;
+//   for (number of array) {
+//     // console.log(number);
+//     result += number;
+//   }
+//   return { result };
+// };
+
+// const array = [1, 2, 3, 4, 5, 6];
+
+// console.log(sumNumbers(array));
+
+// another method of adding the sum of all numbers
+
+// const sumOfNumbers = (num) => {
+//   let sum = 0;
+
+//   for (let i = 1; i <= num; i++) {
+//     sum += i;
+//   }
+//   return { sum };
+// };
+
+// console.log(sumOfNumbers(6));
+
+// sum of all numbers the user passes
+
+// const sumOfNumbers = (num) => {
+//   let result = 0;
+//   for (i = 0; i <= num; i++) {
+//     result = result + i;
+//   }
+//   return { result };
+// };
+
+// console.log(sumOfNumbers(10));
+
+// sum of all numbers in a digit
+const sumNumbers = (num) => {
+  let result = 0;
+  while (num > 0) {
+    result = result + (num % 10);
+    result = result + num / 10;
+  }
+  return result;
+};
+
+console.log(sumNumbers(54));
