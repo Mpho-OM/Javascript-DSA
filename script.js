@@ -362,13 +362,12 @@ const array2 = [1, 2, 3, 4, 5, 6];
 // console.log(sumOfNumbers(10));
 
 // sum of all numbers in a digit
-const sumNumbers = (num) => {
-  let result = 0;
-  while (num > 0) {
-    result = result + (num % 10);
-    result = result + num / 10;
-  }
-  return result;
-};
-
-console.log(sumNumbers(54));
+// const sumNumber = (num) => {
+//   let sum = 0;
+//   while (num > 0) {
+//     sum += num % 10;
+//     num = Math.floor(num / 10);
+//   }
+//   return sum;
+// };
+// console.log(sumNumber(540));
