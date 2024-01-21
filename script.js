@@ -371,3 +371,23 @@ const array2 = [1, 2, 3, 4, 5, 6];
 //   return sum;
 // };
 // console.log(sumNumber(540));
+
+// program to check whether the sum of 2 numbers in 100 or 1 is 100 then prints true of false if the ocndintion is not satisfied
+
+const sumNumbers = (num1, num2) => {
+  if (num1 + num1 === 100 || num1 === 100) {
+    return true;
+  } else {
+    return false;
+  }
+};
+console.log(sumNumbers(100));
+
+// program to get the file extention name
+
+// const fileExtention = (fileName) => fileName.slice(fileName.lastIndexOf("."));
+
+// console.log(fileExtention("index.html"));
+const extentionName = (file) => file.slice(file.lastIndexOf("."));
+
+console.log(extentionName("script.js"));
