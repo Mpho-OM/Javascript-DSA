@@ -391,3 +391,20 @@ console.log(sumNumbers(100));
 const extentionName = (file) => file.slice(file.lastIndexOf("."));
 
 console.log(extentionName("script.js"));
+
+// program to shift the letter forward in a word
+const wordShifter = (word) =>
+  word
+    .split("")
+    .map((char) => String.fromCharCode(char.charCodeAt(0) + 1))
+    .join(" ");
+
+console.log(wordShifter("bce"));
+
+const wordIncrementer = (word) =>
+  word
+    .split("")
+    .map((char) => String.fromCharCode(char.charCodeAt(0) + 1))
+    .join("");
+
+console.log(wordIncrementer("efg"));
