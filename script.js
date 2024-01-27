@@ -393,18 +393,30 @@ const extentionName = (file) => file.slice(file.lastIndexOf("."));
 console.log(extentionName("script.js"));
 
 // program to shift the letter forward in a word
-const wordShifter = (word) =>
-  word
-    .split("")
-    .map((char) => String.fromCharCode(char.charCodeAt(0) + 1))
-    .join(" ");
+// const wordShifter = (word) =>
+//   word
+//     .split("")
+//     .map((char) => String.fromCharCode(char.charCodeAt(0) + 1))
+//     .join(" ");
 
-console.log(wordShifter("bce"));
+// console.log(wordShifter("bce"));
 
-const wordIncrementer = (word) =>
-  word
-    .split("")
-    .map((char) => String.fromCharCode(char.charCodeAt(0) + 1))
-    .join("");
+// const wordIncrementer = (word) =>
+//   word
+//     .split("")
+//     .map((char) => String.fromCharCode(char.charCodeAt(0) + 1))
+//     .join("");
 
-console.log(wordIncrementer("efg"));
+// console.log(wordIncrementer("efg"));
+
+// fibonacci sequence
+
+const fibonacci = (n) => {
+  let fibo = [0, 1];
+  for (let i = 2; i <= n; i++) {
+    fibo[i] = fibo[i - 1] + fibo[i - 2];
+  }
+  return fibo;
+};
+
+console.log(fibonacci(5));
