@@ -411,12 +411,27 @@ console.log(extentionName("script.js"));
 
 // fibonacci sequence
 
-const fibonacci = (n) => {
-  let fibo = [0, 1];
-  for (let i = 2; i <= n; i++) {
-    fibo[i] = fibo[i - 1] + fibo[i - 2];
+// const fibonacci = (n) => {
+//   let fibo = [0, 1];
+//   for (let i = 2; i <= n; i++) {
+//     fibo[i] = fibo[i - 1] + fibo[i - 2];
+//   }
+//   return fibo;
+// };
+
+// console.log(fibonacci(5));
+
+// fibonacci redo
+
+const fibosequence = (n) => {
+  let array = [0, 1, 1, 2];
+
+  for (let i = 3; i < n; i++) {
+    array[i] = array[i - 1] + array[i - 2];
   }
-  return fibo;
+  return array
 };
 
-console.log(fibonacci(5));
+console.log(fibosequence(8))
+
+
