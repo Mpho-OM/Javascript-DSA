@@ -423,15 +423,55 @@ console.log(extentionName("script.js"));
 
 // fibonacci redo
 
-const fibosequence = (n) => {
-  let array = [0, 1, 1, 2];
+// const fibosequence = (n) => {
+//   let array = [0, 1, 1, 2];
 
-  for (let i = 3; i < n; i++) {
-    array[i] = array[i - 1] + array[i - 2];
+//   for (let i = 3; i < n; i++) {
+//     array[i] = array[i - 1] + array[i - 2];
+//   }
+//   return array
+// };
+
+// console.log(fibosequence(8))
+
+// factorial of a  number
+// const factorial = (n) => {
+//   let result = 1;
+//   for (let i = 2; i < n; i++) {
+//     // console.log(i);
+//     result = result * i;
+//   }
+//   return result;
+// };
+// console.log(factorial(5));
+
+// const factorial = (n) => {
+//   let result = 1;
+//   for (let i = 2; i <= n; i++) {
+//     result = result * i;
+//   }
+//   return result;
+// };
+// console.log(factorial(5));
+
+// factorial
+
+// const Factorial = (n) => {
+//   let result = 1;
+//   for (let i = 2; i <= n; i++) {
+//     result = result * i;
+//   }
+//   return result;
+// };
+// console.log(Factorial(5));
+
+// factorial
+const factorial = (n) => {
+  result = 1;
+  for (let i = 2; i <= n; i++) {
+    result = result * i;
   }
-  return array
+  return result;
 };
 
-console.log(fibosequence(8))
-
-
+console.log(factorial(5));
