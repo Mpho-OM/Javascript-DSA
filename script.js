@@ -492,3 +492,41 @@ const primeNumbers = (n) => {
 };
 
 console.log(primeNumbers(5));
+
+// factorial of a number
+const Factorial = (n) => {
+  let result = 1;
+  for (let i = 2; i <= n; i++) {
+    result = result * i;
+  }
+  return { result };
+};
+
+console.log(Factorial(5));
+
+// determine prime numbers
+const isPrime = (n) => {
+  if (n < 2) {
+    return false;
+  }
+  for (let i = 2; i < n; i++) {
+    if (n % i === 0) {
+      return false;
+    }
+    return true;
+  }
+};
+
+console.log(isPrime(5));
+
+// fibonacci sequence
+
+const fibo = (n) => {
+  let array = [0, 1];
+
+  for (let i = 2; i < n; i++) {
+    array[i] = array[i - 1] + array[i - 2];
+  }
+  return array;
+};
+console.log(fibo(8));
