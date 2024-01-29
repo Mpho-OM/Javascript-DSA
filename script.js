@@ -466,12 +466,29 @@ console.log(extentionName("script.js"));
 // console.log(Factorial(5));
 
 // factorial
-const factorial = (n) => {
-  result = 1;
-  for (let i = 2; i <= n; i++) {
-    result = result * i;
+// const factorial = (n) => {
+//   result = 1;
+//   for (let i = 2; i <= n; i++) {
+//     result = result * i;
+//   }
+//   return result;
+// };
+
+// console.log(factorial(5));
+
+// determine prime numbers
+
+const primeNumbers = (n) => {
+  if (n < 2) {
+    return true;
   }
-  return result;
+  for (let i = 2; i < n; i++) {
+    if (i % n === 0) {
+      return false;
+    } else {
+      return true;
+    }
+  }
 };
 
-console.log(factorial(5));
+console.log(primeNumbers(5));
