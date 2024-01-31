@@ -478,55 +478,88 @@ console.log(extentionName("script.js"));
 
 // determine prime numbers
 
-const primeNumbers = (n) => {
-  if (n < 2) {
-    return true;
-  }
-  for (let i = 2; i < n; i++) {
-    if (i % n === 0) {
-      return false;
-    } else {
-      return true;
-    }
-  }
-};
+// const primeNumbers = (n) => {
+//   if (n < 2) {
+//     return true;
+//   }
+//   for (let i = 2; i < n; i++) {
+//     if (i % n === 0) {
+//       return false;
+//     } else {
+//       return true;
+//     }
+//   }
+// };
 
-console.log(primeNumbers(5));
+// console.log(primeNumbers(5));
 
-// factorial of a number
-const Factorial = (n) => {
-  let result = 1;
-  for (let i = 2; i <= n; i++) {
-    result = result * i;
-  }
-  return { result };
-};
+// // factorial of a number
+// const Factorial = (n) => {
+//   let result = 1;
+//   for (let i = 2; i <= n; i++) {
+//     result = result * i;
+//   }
+//   return { result };
+// };
 
-console.log(Factorial(5));
+// console.log(Factorial(5));
 
-// determine prime numbers
-const isPrime = (n) => {
-  if (n < 2) {
+// // determine prime numbers
+// const isPrime = (n) => {
+//   if (n < 2) {
+//     return false;
+//   }
+//   for (let i = 2; i < n; i++) {
+//     if (n % i === 0) {
+//       return false;
+//     }
+//     return true;
+//   }
+// };
+
+// console.log(isPrime(5));
+
+// // fibonacci sequence
+
+// const fibo = (n) => {
+//   let array = [0, 1];
+
+//   for (let i = 2; i < n; i++) {
+//     array[i] = array[i - 1] + array[i - 2];
+//   }
+//   return array;
+// };
+// console.log(fibo(8));
+
+// determine whether a number is a power of 2 or not
+// const powerTwo = (n) => {
+//   if (n < 1) {
+//     return false;
+//   }
+//   while (n > 1) {
+//     if (n % 2 !== 0) {
+//       return false;
+//     }
+//     n = n / 2;
+//   }
+//   return true;
+// };
+
+// console.log(powerTwo(64));
+// console.log(2 * 2 * 2 * 2 * 2 * 2);
+
+const powerFive = (n) => {
+  if (n < 1) {
     return false;
   }
-  for (let i = 2; i < n; i++) {
-    if (n % i === 0) {
+  while (n > 1) {
+    if (n % 5 !== 0) {
       return false;
     }
-    return true;
+    n = n / 5;
   }
+  return true;
 };
 
-console.log(isPrime(5));
-
-// fibonacci sequence
-
-const fibo = (n) => {
-  let array = [0, 1];
-
-  for (let i = 2; i < n; i++) {
-    array[i] = array[i - 1] + array[i - 2];
-  }
-  return array;
-};
-console.log(fibo(8));
+console.log(powerFive(25));
+console.log(5 * 5);
