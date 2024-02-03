@@ -548,18 +548,57 @@ console.log(extentionName("script.js"));
 // console.log(powerTwo(64));
 // console.log(2 * 2 * 2 * 2 * 2 * 2);
 
-const powerFive = (n) => {
+// const powerFive = (n) => {
+//   if (n < 1) {
+//     return false;
+//   }
+//   while (n > 1) {
+//     if (n % 5 !== 0) {
+//       return false;
+//     }
+//     n = n / 5;
+//   }
+//   return true;
+// };
+
+// console.log(powerFive(25));
+// console.log(5 * 5);
+
+// sum of numbers in an array
+
+const sumArray = (array) => {
+  let sum = 0;
+  for (i of array) {
+    sum = sum + i;
+  }
+  return { sum };
+};
+const array = [1, 2, 3, 4, 5, 6];
+console.log(sumArray(array));
+
+// fibonacci sequence
+const fibonacci = (n) => {
+  let seq = [0, 1];
+  for (let i = 2; i <= n; i++) {
+    seq[i] = seq[i - 2] + seq[i - 1];
+  }
+  return seq;
+};
+console.log(fibonacci(5));
+
+// is power of 4
+
+const isPowerFour = (n) => {
   if (n < 1) {
     return false;
   }
-  while (n > 1) {
-    if (n % 5 !== 0) {
+  for (let i = 2; i < n; i++) {
+    if (n % 4 !== 0) {
       return false;
     }
-    n = n / 5;
+    n = n / 4;
   }
   return true;
 };
-
-console.log(powerFive(25));
-console.log(5 * 5);
+console.log(4 * 4 * 4);
+console.log(isPowerFour(64));
