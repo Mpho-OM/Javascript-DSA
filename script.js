@@ -602,3 +602,27 @@ const isPowerFour = (n) => {
 };
 console.log(4 * 4 * 4);
 console.log(isPowerFour(64));
+
+// factorial of a number
+// const Factorial = (n) => {
+//   let result = 1;
+//   for (let i = 2; i <= n; i++) {
+//     result = result * i;
+//   }
+//   return { result };
+// };
+
+// console.log(Factorial(5));
+
+// write a program to loop through an array and set the variable number to the highest number in the array
+const highNumber = (nums) => {
+  let result = 0;
+  for (i of nums) {
+    if (result < i) {
+      result = i;
+    }
+  }
+  return { result };
+};
+const nums = [1, 2, 3, 4, 598, 2];
+console.log(highNumber(nums));
