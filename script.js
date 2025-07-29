@@ -566,42 +566,42 @@ console.log(extentionName("script.js"));
 
 // sum of numbers in an array
 
-const sumArray = (array) => {
-  let sum = 0;
-  for (i of array) {
-    sum = sum + i;
-  }
-  return { sum };
-};
-const array = [1, 2, 3, 4, 5, 6];
-console.log(sumArray(array));
+// const sumArray = (array) => {
+//   let sum = 0;
+//   for (i of array) {
+//     sum = sum + i;
+//   }
+//   return { sum };
+// };
+// const array = [1, 2, 3, 4, 5, 6];
+// console.log(sumArray(array));
 
 // fibonacci sequence
-const fibonacci = (n) => {
-  let seq = [0, 1];
-  for (let i = 2; i <= n; i++) {
-    seq[i] = seq[i - 2] + seq[i - 1];
-  }
-  return seq;
-};
-console.log(fibonacci(5));
+// const fibonacci = (n) => {
+//   let seq = [0, 1];
+//   for (let i = 2; i <= n; i++) {
+//     seq[i] = seq[i - 2] + seq[i - 1];
+//   }
+//   return seq;
+// };
+// console.log(fibonacci(5));
 
-// is power of 4
+// // is power of 4
 
-const isPowerFour = (n) => {
-  if (n < 1) {
-    return false;
-  }
-  for (let i = 2; i < n; i++) {
-    if (n % 4 !== 0) {
-      return false;
-    }
-    n = n / 4;
-  }
-  return true;
-};
-console.log(4 * 4 * 4);
-console.log(isPowerFour(64));
+// const isPowerFour = (n) => {
+//   if (n < 1) {
+//     return false;
+//   }
+//   for (let i = 2; i < n; i++) {
+//     if (n % 4 !== 0) {
+//       return false;
+//     }
+//     n = n / 4;
+//   }
+//   return true;
+// };
+// console.log(4 * 4 * 4);
+// console.log(isPowerFour(64));
 
 // factorial of a number
 // const Factorial = (n) => {
@@ -629,12 +629,29 @@ console.log(isPowerFour(64));
 
 // fibonacci sequence
 
-const fibi = (n) => {
-  seq = [0, 1];
-  for (let i = 2; i < n; i++) {
-    seq[i] = seq[i - 2] + seq[i - 1];
-  }
-  return seq;
-};
+// const fibi = (n) => {
+//   seq = [0, 1];
+//   for (let i = 2; i < n; i++) {
+//     seq[i] = seq[i - 2] + seq[i - 1];
+//   }
+//   return seq;
+// };
 
-console.log(fibi(10));
+// console.log(fibi(10));
+
+//arrow functions
+// const Sum=(A,B)=>{
+//   total = A+B
+//   return total
+// }
+// console.log(Sum(10,5))
+
+const groceries = ["apple","Pear","Berry","Guava"]
+console.log(groceries[0]);
+
+//push method
+groceries.push("Cake")
+console.log(groceries);
+
+// slice method
+console.log(groceries.slice(0,2));
