@@ -679,36 +679,54 @@ const groceries = ["apple","Pear","Berry","Guava"]
 
 // console.log(person);
 
-const person2 ={
-  tshirt : 'black',
-  name : 'Quazi'
-}
-console.log(person2.name);
+// const person2 ={
+//   tshirt : 'black',
+//   name : 'Quazi'
+// }
+// console.log(person2.name);
 
-person2.occupation ='Coder'
-console.log(person2);
+// person2.occupation ='Coder'
+// console.log(person2);
 
-const Introducer =(name,shirt)=>{
-  const person={
+// const Introducer =(name,shirt)=>{
+//   const person={
+//     name:name,
+//     shirt:shirt
+//   }
+//  const intro= `Hi, my name ${person.name} and the color of my shirt is ${person.shirt}`
+
+//  return intro
+// }
+
+// console.log(Introducer('Npho','Green'));
+
+// const DealerCar= (name,model)=>{
+//   const car ={
+//     name:name,
+//     model:model
+//   }
+
+//   const newcar=`The name of the car is ${car.name} and the model is ${car.model} `
+
+//   return newcar
+// }
+
+// console.log(DealerCar('Mustand','Bullet'));
+
+const PersonDescriber =(name, shirt)=>{
+  const PersonObj ={
     name:name,
-    shirt:shirt
-  }
- const intro= `Hi, my name ${person.name} and the color of my shirt is ${person.shirt}`
+    shirt:shirt,
+    Assets: 1000,
+    liabilities: 130,
+    networth: function () {
+      return this.Assets-this.liabilities
+    } 
+  } 
 
- return intro
+  const description = `I am ${PersonObj.name} and I am wearing ${PersonObj.shirt} and my networth is ${PersonObj.networth()}`
+
+  return description
 }
 
-console.log(Introducer('Npho','Green'));
-
-const DealerCar= (name,model)=>{
-  const car ={
-    name:name,
-    model:model
-  }
-
-  const newcar=`The name of the car is ${car.name} and the model is ${car.model} `
-
-  return newcar
-}
-
-console.log(DealerCar('Mustand','Bullet'));
+console.log(PersonDescriber('Leonardo', 'Lacoste'));
