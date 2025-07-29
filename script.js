@@ -647,11 +647,68 @@ console.log(extentionName("script.js"));
 // console.log(Sum(10,5))
 
 const groceries = ["apple","Pear","Berry","Guava"]
-console.log(groceries[0]);
+// console.log(groceries[0]);
 
-//push method
-groceries.push("Cake")
-console.log(groceries);
+// //push method
+// groceries.push("Cake")
+// console.log(groceries);
 
-// slice method
-console.log(groceries.slice(0,2));
+// // slice method
+// console.log(groceries.slice(0,2));
+
+// //index of
+// console.log(groceries.indexOf("Pear"));
+// console.log(groceries.length);
+
+
+// objects
+
+// dot notation 
+// const person ={
+//   name:'Mpho',
+//   shirt:'blue' 
+// }
+
+// console.log(person.name);
+
+// // bracket notation 
+// console.log(person["shirt"]);
+
+// // assign objects 
+// person.phone='06588235'
+
+// console.log(person);
+
+const person2 ={
+  tshirt : 'black',
+  name : 'Quazi'
+}
+console.log(person2.name);
+
+person2.occupation ='Coder'
+console.log(person2);
+
+const Introducer =(name,shirt)=>{
+  const person={
+    name:name,
+    shirt:shirt
+  }
+ const intro= `Hi, my name ${person.name} and the color of my shirt is ${person.shirt}`
+
+ return intro
+}
+
+console.log(Introducer('Npho','Green'));
+
+const DealerCar= (name,model)=>{
+  const car ={
+    name:name,
+    model:model
+  }
+
+  const newcar=`The name of the car is ${car.name} and the model is ${car.model} `
+
+  return newcar
+}
+
+console.log(DealerCar('Mustand','Bullet'));
