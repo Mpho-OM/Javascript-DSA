@@ -713,20 +713,49 @@ const groceries = ["apple","Pear","Berry","Guava"]
 
 // console.log(DealerCar('Mustand','Bullet'));
 
-const PersonDescriber =(name, shirt)=>{
-  const PersonObj ={
-    name:name,
-    shirt:shirt,
-    Assets: 1000,
-    liabilities: 130,
-    networth: function () {
-      return this.Assets-this.liabilities
-    } 
-  } 
+// const PersonDescriber =(name, shirt)=>{
+//   const PersonObj ={
+//     name:name,
+//     shirt:shirt,
+//     Assets: 1000,
+//     liabilities: 130,
+//     networth: function () {
+//       return this.Assets-this.liabilities
+//     } 
+//   } 
 
-  const description = `I am ${PersonObj.name} and I am wearing ${PersonObj.shirt} and my networth is ${PersonObj.networth()}`
+//   const description = `I am ${PersonObj.name} and I am wearing ${PersonObj.shirt} and my networth is ${PersonObj.networth()}`
 
-  return description
-}
+//   return description
+// }
 
-console.log(PersonDescriber('Leonardo', 'Lacoste'));
+// console.log(PersonDescriber('Leonardo', 'Lacoste'));
+
+// const Mpho = (Shirt,Job,income,tax)=>{
+//   const MphoObj={
+//     Shirt:Shirt,
+//     Job:Job,
+//     income:income,
+//     tax:tax,
+//     GrossSalary: function (){
+//       return this.income - this.tax
+//     }
+//   }
+//   const text= `Hi i am wearing ${MphoObj.Shirt} and I work as ${MphoObj.Job}, my income is ${MphoObj.income} and I am taxed ${MphoObj.GrossSalary()}`
+
+//   console.log(Mpho('Jersey','IT trainee',10000,200));
+// }
+
+//bet calculator
+const BetCalculator = (bet, odds) => {
+  const BetObj = {
+    bet: bet,
+    odds: odds,
+    winnings: function () {
+      return this.bet * this.odds;
+    }
+  };
+  const mesage=`congratulations! you have won R${BetObj.winnings()} on your bet of R${BetObj.bet} at odds of ${BetObj.odds}`;
+  return mesage;
+};
+console.log(BetCalculator(100, 2.5));
