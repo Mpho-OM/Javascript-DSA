@@ -747,15 +747,58 @@ const groceries = ["apple","Pear","Berry","Guava"]
 // }
 
 //bet calculator
-const BetCalculator = (bet, odds) => {
-  const BetObj = {
-    bet: bet,
-    odds: odds,
-    winnings: function () {
-      return this.bet * this.odds;
+// const BetCalculator = (bet, odds) => {
+//   const BetObj = {
+//     bet: bet,
+//     odds: odds,
+//     winnings: function () {
+//       return this.bet * this.odds;
+//     }
+//   };
+//   const mesage=`congratulations! you have won R${BetObj.winnings()} on your bet of R${BetObj.bet} at odds of ${BetObj.odds}`;
+//   return mesage;
+// };
+// console.log(BetCalculator(100, 2.5));
+
+// //letter counter 
+
+// const letterCounter = ()=>{
+//   const phrase='Hi, Welcome to our application, feel free to revist the page'
+
+//   for(i in phrase){
+//     i=1,i++;
+//   }
+// }
+
+// console.log(letterCounter);
+
+
+//object exercise1
+
+// const bettingCalculator = (bet, odds) => {
+//   const betObj = {
+//     bet: bet,
+//     odds: odds,
+//     winnings: function () {
+//       return this.bet * this.odds;
+//     }
+//   }
+
+//   const message = `Congratulations! You have won R${betObj.winnings()} on your bet of R${betObj.bet} at odds of ${betObj.odds}`;
+//   return message;
+// }
+// console.log(bettingCalculator(100, 2.5));
+
+const Name =(name,surname)=>{
+  const selfObj ={
+    name:name,
+    surname:surname,
+    fullname : function(){
+      return this.name + " "+this.surname;
     }
-  };
-  const mesage=`congratulations! you have won R${BetObj.winnings()} on your bet of R${BetObj.bet} at odds of ${BetObj.odds}`;
-  return mesage;
-};
-console.log(BetCalculator(100, 2.5));
+  }
+  const sentance = `Hi my name is ${selfObj.name} and surname is ${selfObj.surname}. My fullname is ${selfObj.fullname()}`
+    return sentance
+}
+
+console.log(Name('Mpho','Chuene'));
